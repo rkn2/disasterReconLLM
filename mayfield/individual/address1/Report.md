@@ -17,12 +17,12 @@ _No PDF documents found._
 
 | Attribute Name | Observation (Before) | Observation (After) | Uncertainty | Input Choices | Identification Guide |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Property ID | | |  | Address | Use the folder name assigned in OneDrive; this is the primary key. |
-| Property Name | | | 2026-01-03 00:00:00 | Current or Historic Name | Search NRHP database by property address or name. |
-| National Register ID | | | 1 | 8 or 9-digit Reference Number | Search NRHP database by address or name. |
-| Archetype Number | | | 2026-01-03 00:00:00 | T1-19 for tornado or T 1-15 for flood | See archetypes spreadsheet |
-| Archetype Description | | | 2026-01-03 00:00:00 | make this be a full description  | Describe building use based on "Before" signage and architectural style. |
-| Pre-Event Status | | | 2026-01-03 00:00:00 | Active, Mothballed, Abandoned, Under Renovation | Look for "Before" clues like boarded windows (mothballed) vs. signage (active). |
+| Property ID | 198 | | Low | Address | Use the folder name assigned in OneDrive; this is the primary key. |
+| Property Name | N/A | | Low | Current or Historic Name | Search NRHP database by property address or name. |
+| National Register ID | N/A | | Low | 8 or 9-digit Reference Number | Search NRHP database by address or name. |
+| Archetype Number | T8 | | Low | T1-19 for tornado or T 1-15 for flood | See archetypes spreadsheet |
+| Archetype Description | 2-story unreinforced masonry commercial building with storefront glazing. | | Low | make this be a full description  | Describe building use based on "Before" signage and architectural style. |
+| Pre-Event Status | Active | | Low | Active, Mothballed, Abandoned, Under Renovation | Look for "Before" clues like boarded windows (mothballed) vs. signage (active). |
 | Significance Type | | | 1 | Local, State, National, World Heritage | Extracted from the NRHP nomination narrative text. |
 | Construction Year | | | 2026-01-03 00:00:00 | Numeric Year (e.g., 1910) | Use year listed in NRHP/Property Cards; estimate by style if missing. |
 | Structural Wall System | | | 2026-01-03 00:00:00 | URM (Brick), URM (Stone), URM (Concrete), Hybrid, Wood Frame | Look for header rows (sideways bricks) indicating multi-wythe structural URM. |
