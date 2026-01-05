@@ -80,4 +80,9 @@ The agent will:
 1.  Loop through all folders.
 2.  Check if `Report.md` is empty/new.
 3.  If empty, it will analyze the photos and fill it.
-4.  If already full, it will skip it.
+
+## Example Output
+
+You can see a complete example of the folder structure and a finalized report in the `mayfield` folder included in this repo.
+
+-   **[mayfield/individual/address1/Report.md](mayfield/individual/address1/Report.md)**: This is an example of a report that has been scaffolded by the script and then populated by the Agent with visual observations.
