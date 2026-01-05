@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Mac
+.DS_Store
+
+# Excel temp files
+~$*.xlsx
+
+# User Data (Optional - Keep if you want to track sample data, Ignore if huge)
+# Using 'mayfield' as sample is fine, but maybe ignore large future datasets
+# [Disaster_Name]/
