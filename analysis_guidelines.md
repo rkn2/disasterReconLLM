@@ -28,3 +28,11 @@ Be descriptive! Do not use single words for these fields:
     - **Mixed debris** (brick + wood) = Simultaneous collapse?
     - **Clean brick pile** = Wall failure?
     - **Roof sitting on ground** = Pancake collapse?
+
+## 6. Uncertainty & Estimation
+- **Estimates**: If you are not 100% sure of a numeric value (like "Construction Year" or "Wall Thickness") based on a document, explicitly write `(est)` next to the value.
+    - Example: `1900 (est)` instead of just `1900`.
+- **Confidence Levels**:
+    - **Low Uncertainty**: You have a document (Property Card, Report) stating this fact.
+    - **Moderate Uncertainty**: You are estimating based on strong visual norms (e.g., standard brick sizes, architectural style).
+    - **High Uncertainty**: You are guessing or the image is unclear.
