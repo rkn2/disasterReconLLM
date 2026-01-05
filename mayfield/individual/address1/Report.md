@@ -24,7 +24,7 @@ _No PDF documents found._
 | Archetype Description | 2-story unreinforced masonry commercial building with storefront glazing. | | Low | make this be a full description  | Describe building use based on "Before" signage and architectural style. |
 | Pre-Event Status | Active | | Low | Active, Mothballed, Abandoned, Under Renovation | Look for "Before" clues like boarded windows (mothballed) vs. signage (active). |
 | Significance Type | Local | | Low | Local, State, National, World Heritage | Extracted from the NRHP nomination narrative text. |
-| Construction Year | 1900 | | Low | Numeric Year (e.g., 1910) | Use year listed in NRHP/Property Cards; estimate by style if missing. |
+| Construction Year | 1900 (est) | | Moderate | Numeric Year (e.g., 1910) | Use year listed in NRHP/Property Cards; estimate by style if missing. |
 | Structural Wall System | URM (Brick) | | Low | URM (Brick), URM (Stone), URM (Concrete), Hybrid, Wood Frame | Look for header rows (sideways bricks) indicating multi-wythe structural URM. |
 | Wall Anchorage Type | None | | Low | None, Star/S-Plates, Punched Plates, Through-Bolts, Iron Straps | Identify metal hardware at floor or roof lines on "Before" facades. |
 | Masonry Leaves | 3 | | Moderate | 1, 2, 3, 4+ Wythes | Check window depth or corner exposures in technical documentation. |
