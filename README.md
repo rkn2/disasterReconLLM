@@ -26,17 +26,35 @@ pip install pandas openpyxl
 -   `.agent/workflows/process_property.md`: The codified workflow for the Agent.
 -   `DATA_COLLECTION_GUIDE.md`: Instructions for students (data collection only).
 
+## Features & Schema
+
+The core logic of the reports is defined in **[features (1).xlsx](features%20(1).xlsx)**. This file acts as the configuration for both the script and the AI Agent.
+
+-   **Attribute Name**: The actual field being analyzed (e.g., "Archetype Number", "No. of Stories").
+-   **Input Choices / Options**: Constrains the AI to valid outputs (e.g., "1, 2, 3+" or "Brick, CMU, Wood").
+-   **Reasoning / Identification Guide**: This column provides the prompt logic or "thinking instructions" for the AI Agent.
+
+*To change what the agent looks for, edit this Excel file.*
+
 ## Usage Guide (Instructor Only)
 
 ### Step 1: Prepare the Data
-Ensure student data is organized as follows:
-```
-[Disaster_Name]/
-  individual/
-    [Property_Address]/
-      photos/before/
-      photos/after/
-      files/
+Ensure student data is organized correctly. Here is an example using the included `mayfield` dataset:
+
+```text
+mayfield/
+├── supplementary/
+│   ├── Mayfield SUA Appendix C - Historic Survey-compressed.pdf
+│   └── 1984.pdf
+└── individual/
+    └── address1/
+        ├── photos/
+        │   ├── before/
+        │   │   └── front before.png
+        │   └── after/
+        │       ├── front after.png
+        │       └── damaged.png
+        └── files/
 ```
 
 ### Step 2: Run Scaffolding
@@ -52,10 +70,14 @@ This will create a `Report.md` in every property folder.
 ### Step 3: Run Agent Analysis
 Use your Agent interface to analyze the properties.
 
-**Prompt:**
+**Option A: Single Property**
 > "Run the Property Analysis workflow on `[Disaster_Name]/individual/[Property_Address]`."
 
+**Option B: Batch Processing (All Properties)**
+> "Run the Batch Processing workflow on `[Disaster_Name]`."
+
 The agent will:
-1.  Read the `Report.md` you just generated.
-2.  Look at the photos.
-3.  Fill in the "Observation" columns based on `analysis_guidelines.md`.
+1.  Loop through all folders.
+2.  Check if `Report.md` is empty/new.
+3.  If empty, it will analyze the photos and fill it.
+4.  If already full, it will skip it.
