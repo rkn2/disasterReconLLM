@@ -68,6 +68,7 @@ python3 generate_reports.py --disaster [Disaster_Folder_Name]
 ### Step 3: Run Agent Analysis
 Ask the AI Agent (Antigravity):
 > "Run the Batch Processing workflow on `[Disaster_Folder_Name]`."
+> *(Note: This workflow automatically finds new folders and skips any reports that are already completed.)*
 
 ---
 
