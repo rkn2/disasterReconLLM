@@ -80,3 +80,11 @@ This folder is for context that applies to the entire dataset or town, not just 
     -   *Good*: `front_facade_damage.jpg`, `rear_elevation.jpg`, `left_side_from_street.jpg`.
 
 3.  **PDFs**: Only put relevant PDFs in the `files/` folder.
+
+## 4. Feature Definitions & References
+If you are unsure what a specific term means (e.g., "What counts as a Hip Roof?" or "How to measure Scour"), refer to these detailed guides:
+
+-   **🌪️ Tornado Features**: [Tornado Data Entry Guide](previousDataInputGuides/tornado/2025_4_9_dataEntryGuide.pdf)
+-   **🌊 Flood Features**: [Flood Data Input Guide](previousDataInputGuides/flood/flood_data_input_guide_Carol.pdf)
+
+*Note: These guides refer to the old Excel manual entry method, but the **definitions** of the building features (Architecture, Damage Patterns) remain the source of truth.*
