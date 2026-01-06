@@ -39,7 +39,7 @@ graph LR
 
 ---
 
-## 👨‍🏫 For Instructors (Running the System)
+## 👩‍🔬 For Doc Nap (Running the System)
 
 ### Prerequisites
 *   Python 3.12+
