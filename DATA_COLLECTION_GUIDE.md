@@ -60,7 +60,12 @@ This folder is for context that applies to the entire dataset or town, not just 
 -   **YouTube**: Look for drone flyovers of the disaster zone. Pause and screenshot your specific property if visible.
 -   **NOAA / NWS Imagery**: The National Weather Service often releases high-resolution aerial comparison maps after major events.
 
-## 4. Best Practices
+### D. Research Toolkit (Links)
+-   **[National Register Database (NPS)](https://npgallery.nps.gov/nrhp)**: Search for historic nominations and technical descriptions.
+-   **[USGS EarthExplorer](https://earthexplorer.usgs.gov/)**: Download historic satellite imagery (Landsat/Sentinel).
+-   **[Google Earth Pro](https://www.google.com/earth/versions/)**: Desktop version required for the "Historical Imagery" timeline slider.
+-   **[NOAA Damage Assessment Toolkit](https://apps.dat.noaa.gov/stormdamage/)**: Official NWS damage paths and EF-ratings.
+
 1.  **Visual Verification**: Don't rely on just one source. If the assessor says "Brick" but the photo shows "Vinyl Siding," trust the photo (it might be a brick veneer or a renovation).
 2.  **File Naming**: Keep filenames descriptive but simple (e.g., `front_facade_before.png`, `roof_collapse_after.jpg`).
 3.  **PDFs**: Only put relevant PDFs in the `files/` folder.

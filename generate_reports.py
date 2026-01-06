@@ -2,6 +2,8 @@ import pandas as pd
 import os
 import glob
 import argparse
+import shutil
+import datetime
 
 def generate_reports():
     parser = argparse.ArgumentParser(description='Generate property report scaffolds.')
@@ -37,6 +39,15 @@ def generate_reports():
         timeline_images = sorted(glob.glob(os.path.join(prop_dir, 'photos', 'timeline', '*')))
         pdfs = glob.glob(os.path.join(prop_dir, 'files', '*.pdf'))
         
+        if os.path.exists(report_path):
+            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            backup_path = os.path.join(prop_dir, f'Report_BACKUP_{timestamp}.md')
+            try:
+                shutil.copy2(report_path, backup_path)
+                print(f"Backed up existing report to {backup_path}")
+            except Exception as e:
+                print(f"Warning: Failed to backup report: {e}")
+
         with open(report_path, 'w') as f:
             f.write(f"# Property Analysis: {prop}\n\n")
             
@@ -77,9 +88,11 @@ def generate_reports():
             f.write("## Feature Analysis\n")
             f.write("> **Note:** If observed value is not in 'Input Choices', please note 'Add [Value] to choices'.\n\n")
             
-            f.write("| Attribute Name | Observation (Before) | Observation (After) | Source | Uncertainty | Input Choices | Identification Guide |\n")
-            f.write("| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n")
-            
+            f.write("| Attribute Name | Observation (Before) | Observation (After) | Source | Uncertainty | Notes | Input Choices | Identification Guide |\n")
+            f.write("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n")
+            f.write("| Latitude | | | | | | Numeric | GPS Latitude (e.g., 36.741) |\n")
+            f.write("| Longitude | | | | | | Numeric | GPS Longitude (e.g., -88.632) |\n")
+
             # Populate table rows
             for index, row in df_features.iterrows():
                 attr_name = row.get('Attribute Name', '')
@@ -103,10 +116,10 @@ def generate_reports():
                          if i == 0: year_label = "Existence (Event Year)"
                          else: year_label = f"Existence (Year {year_offset})"
                          
-                         f.write(f"| {year_label} | | | | {uncertainty} | Yes / No | {guide} |\n")
+                         f.write(f"| {year_label} | | | | {uncertainty} | | Yes / No | {guide} |\n")
                 else:
                     if pd.notna(attr_name):
-                        f.write(f"| {attr_name} | | | | {uncertainty} | {choices} | {guide} |\n")
+                        f.write(f"| {attr_name} | | | | {uncertainty} | | {choices} | {guide} |\n")
 
         print(f"Generated report for {prop} at {report_path}")
 
