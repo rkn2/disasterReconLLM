@@ -22,6 +22,8 @@ _No PDF documents found._
 
 | Attribute Name | Observation (Before) | Observation (After) | Source | Uncertainty | Notes | Input Choices | Identification Guide |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Date Analyzed | | | | | 2026-01-03 00:00:00 | Date | YYYY-MM-DD HH:MM:SS |
+| Observer Name | | | | | Agent | Text | Name of the person analyzing the data |
 | Latitude | 36.741 | | Google Maps | Low | Verified coordinates | Numeric | GPS Latitude (e.g., 36.741) |
 | Longitude | -88.632 | | Google Maps | Low | Verified coordinates | Numeric | GPS Longitude (e.g., -88.632) |
 | Property ID | 198 | | Folder Name | Low | | Address | Use the folder name assigned in OneDrive; this is the primary key. |
@@ -72,3 +74,8 @@ _No PDF documents found._
 | Foundation Condition | [NEEDS_RESEARCH] | High | N/A | Obscured by debris | | Scour, Slab Crack, Shifted, Intact | Check for exposed footings (scour), cracks in slab, or movement. |
 | Roof Damage % | >75% | Moderate | Visual | Stylistic estimate | | 0%, <25%, 25-50%, 50-75%, >75% | Estimate percentage of roof covering missing or structure failed. |
 | Flood Depth (Visible) | N/A | Low | Visual | Not a flood event | | Numeric (feet/cm) | Measure height of mudline relative to windows/doors if visible. |
+| Wall Damage % (Front) | >75% | Moderate | Visual | front_after.png shows total collapse | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "front" images. Estimate % wall failure. If obscured/missing, use [NEEDS_RESEARCH]. |
+| Wall Damage % (Rear) | [NEEDS_RESEARCH] | High | N/A | No rear_ photos | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "rear" images. Estimate % wall failure. If obscured/missing, use [NEEDS_RESEARCH]. |
+| Wall Damage % (Left) | 25-50% | Moderate | Visual | Partial collapse | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "left" images. Estimate % wall failure. If obscured/missing, use [NEEDS_RESEARCH]. |
+| Wall Damage % (Right) | 0% | Low | Visual | Intact in aerial | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "right" images. Estimate % wall failure. If obscured/missing, use [NEEDS_RESEARCH]. |
+| Flood Duration (Hours) | N/A | High | N/A | Tornado event | | Numeric | Check specific reports or interviews. Very hard to tell visually. Likely [NEEDS_RESEARCH]. |
