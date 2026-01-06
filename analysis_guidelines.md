@@ -39,3 +39,8 @@ Be descriptive! Do not use single words for these fields:
     - **Low Uncertainty**: You have a document (Property Card, Report) stating this fact.
     - **Moderate Uncertainty**: You are estimating based on strong visual norms (e.g., standard brick sizes, architectural style).
     - **High Uncertainty**: You are guessing or the image is unclear.
+
+## 7. Orientation & Facades
+- **Objective Terms**: Unless you have confirmed the building's orientation via a map or file metadata (e.g., `north_wall.jpg`), do NOT use cardinal directions (North, South, East, West).
+- **Relative Terms**: Use `Front` (facing street), `Rear`, `Left Side`, `Right Side`.
+- **Estimation**: If you strongly suspect orientation based on shadows or sun, mark it with `(est)` and HIGH Uncertainty.

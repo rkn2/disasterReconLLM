@@ -49,7 +49,7 @@ _No PDF documents found._
 | Visible Water Line | N/A | | Visual (After) | Low | Numeric (meters or feet) | Identify debris lines or horizontal silt stains on the masonry. |
 | Masonry Saturation | None | | Visual (After) | Low | None, Capillary Rise, Saturated, Efflorescence | Capillary Rise = Dark band at base; Efflorescence = White salt stains. |
 | Mortar Condition | Intact | | Visual (After) | Low | Crumbly/Sandy, Hard, Missing, Intact | Zoom into high-res "After" photos to check for joint erosion/voids. |
-| Wall Damage (N,S,E,W) | | Severe (North) | Visual (After) | Low | Undamaged, Minor, Moderate, Severe, Destroyed | Assess each facade separately; look for cracks, bowing, or collapse. |
+| Wall Damage (N,S,E,W) | | Severe (Front Facade) | Visual (After) | Low | Undamaged, Minor, Moderate, Severe, Destroyed | Assess each facade separately; look for cracks, bowing, or collapse. |
 | Wall Structure Damage | | Collapse of upper story | Visual (After) | Low | Damage to structural wythes (N,S,E,W) | Identifies if the load-bearing mass failed vs. just surface finish. |
 | Substrate/Cladding | | N/A (Standard Brick) | Visual (After) | Low | Damage to veneer/outer wythe (N,S,E,W) | Identifies surface-only damage (e.g., loss of brick face or siding). |
 | Fenestration Status | | 50% Broken (Front) | Visual (After) | Low | % Broken/Damaged per facade (N,S,E,W) | Percent of window/door area that is failed or missing. |
