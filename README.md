@@ -51,9 +51,12 @@ mayfield/
         ├── photos/
         │   ├── before/
         │   │   └── front before.png
-        │   └── after/
-        │       ├── front after.png
-        │       └── damaged.png
+        │   ├── after/
+        │   │   ├── front after.png
+        │   │   └── damaged.png
+        │   └── timeline/
+        │       ├── 2018_satellite.jpg
+        │       └── 2020_streetview.png
         └── files/
 ```
 
