@@ -57,8 +57,8 @@ This folder is for context that applies to the entire dataset or town, not just 
 ### C. Damage Evidence (The "After")
 -   **Social Media**: Twitter (X), Facebook, and TikTok are valuable for real-time disaster footage.
     -   *Search Terms*: "[City Name] tornado", "[Street Name] damage", "aerial footage [City]".
--   **YouTube**: Look for drone flyovers of the disaster zone. Pause and screenshot your specific property if visible.
-    -   *Recommended Channels*: **iCyclone** (Josh Morgerman), **WXChasing** (Brandon Clement), **Reed Timmer**, **Live Storms Media**. These channels often have high-res ground-level and drone footage immediately post-disaster.
+-   **YouTube / Facebook**: Look for drone flyovers of the disaster zone.
+    -   *Recommended Channels*: **iCyclone** (Josh Morgerman), **WXChasing** ([Brandon Clement FB Reels](https://www.facebook.com/wxchasing/reels/)), **Reed Timmer**, **Live Storms Media**.
 -   **NOAA / NWS Imagery**: The National Weather Service often releases high-resolution aerial comparison maps after major events.
 
 ### E. Location Data
@@ -70,6 +70,9 @@ This folder is for context that applies to the entire dataset or town, not just 
 -   **[USGS EarthExplorer](https://earthexplorer.usgs.gov/)**: Download historic satellite imagery (Landsat/Sentinel).
 -   **[Google Earth Pro](https://www.google.com/earth/versions/)**: Desktop version required for the "Historical Imagery" timeline slider.
 -   **[NOAA Damage Assessment Toolkit](https://apps.dat.noaa.gov/stormdamage/)**: Official NWS damage paths and EF-ratings.
+-   **[NOAA Emergency Response Imagery](https://storms.ngs.noaa.gov/)**: Ultra high-res post-disaster aerials (The "Gold Standard" for After images).
+-   **[ReliefWeb](https://reliefweb.int/disasters)**: Global disaster monitoring, reports, and humanitarian context.
+-   **[ArcGIS Damage Assessments](https://www.arcgis.com/home/user.html?user=v-lmarotti_mssmt)**: (Example Source) Useful user-generated maps and data.
 
 1.  **Visual Verification**: Don't rely on just one source. If the assessor says "Brick" but the photo shows "Vinyl Siding," trust the photo (it might be a brick veneer or a renovation).
 2.  **File Naming (Orientation)**: Do **NOT** guess "North" or "South" unless you are looking at a map.
