@@ -24,7 +24,12 @@ Be descriptive! Do not use single words for these fields:
 
 ## 4. Input Choices
 - **Check `features (1).xlsx`**: Always prefer the "Input Choices" listed in the Excel file.
-- **Additions**: If a specific observation (e.g., "Storefront") is not in the list but is accurate, note it in the table.
+- **Additions**: If a specific observation (e.g., "Storefront") is not an option but is accurate, note it.
+- **Missing Data (Crucial)**: If you cannot see a feature (e.g., Foundation obscured by debris), do **NOT** guess.
+    -   **Value**: Enter `[NEEDS_RESEARCH]`
+    -   **Uncertainty**: `High`
+    -   **Notes**: "Obscured by debris", "Not visible in aerials", etc.
+    -   *This signals the Student to go find this info manually.*
 
 ## 5. Debris Analysis
 - Look at the rubble closely.

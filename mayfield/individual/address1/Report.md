@@ -69,6 +69,6 @@ _No PDF documents found._
 | Existence (Year +3) | | No | Visual Timeline | Low | | Yes / No | Track presence of the structure using multi-year historic aerials. |
 | Existence (Year +4) | | No | Visual Timeline | Low | | Yes / No | Track presence of the structure using multi-year historic aerials. |
 | Existence (Year +5) | | No | Visual Timeline | Low | | Yes / No | Track presence of the structure using multi-year historic aerials. |
-| Foundation Condition | Intact | Low | Visual | N/A | | Scour, Slab Crack, Shifted, Intact | Check for exposed footings (scour), cracks in slab, or movement. |
+| Foundation Condition | [NEEDS_RESEARCH] | High | N/A | Obscured by debris | | Scour, Slab Crack, Shifted, Intact | Check for exposed footings (scour), cracks in slab, or movement. |
 | Roof Damage % | >75% | Moderate | Visual | Stylistic estimate | | 0%, <25%, 25-50%, 50-75%, >75% | Estimate percentage of roof covering missing or structure failed. |
 | Flood Depth (Visible) | N/A | Low | Visual | Not a flood event | | Numeric (feet/cm) | Measure height of mudline relative to windows/doors if visible. |
