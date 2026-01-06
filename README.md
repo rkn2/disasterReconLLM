@@ -4,14 +4,14 @@
 
 This system combines student-collected field data with AI Agent analysis to generate consistent, high-quality reconnaissance reports.
 
-## 🚀 Quick Links
-*   **For Students**: 📸 **[Data Collection Guide](DATA_COLLECTION_GUIDE.md)** - *Start here!*
-*   **For Reviewers**: 🤖 **[Analysis Guidelines](analysis_guidelines.md)** - *How to audit the AI.*
-*   **Result Example**: 📄 **[Sample Report](mayfield/individual/address1/Report.md)**
+## Quick Links
+*   **For Students**: **[Data Collection Guide](DATA_COLLECTION_GUIDE.md)** - *Start here!*
+*   **For Reviewers**: **[Analysis Guidelines](analysis_guidelines.md)** - *How to audit the AI.*
+*   **Result Example**: **[Sample Report](mayfield/individual/address1/Report.md)**
 
 ---
 
-## 🔄 Workflow Overview
+## Workflow Overview
 
 ```mermaid
 graph LR
@@ -28,7 +28,7 @@ graph LR
 
 ---
 
-## 👩‍🎓 For Students
+## For Students
 
 **Your primary job is Data Collection & Verification.**
 
@@ -39,7 +39,7 @@ graph LR
 
 ---
 
-## 👩‍🔬 For Doc Nap (Running the System)
+## For Doc Nap (Running the System)
 
 ### Prerequisites
 *   Python 3.12+
@@ -71,7 +71,7 @@ Ask the AI Agent (Antigravity):
 
 ---
 
-## 🧠 System Logic & Schema
+## System Logic & Schema
 
 *   **Schema**: **[features.xlsx](features.xlsx)** defines every row in the report (Attribute Name, Options, Prompt Logic).
     *   *Note*: Includes unified logic for both Tornado and Flood hazards.
