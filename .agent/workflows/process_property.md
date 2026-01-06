@@ -4,7 +4,7 @@ description: Process a single property folder to generate a technical report.
 
 1.  **Read Guidelines**
     -   Read `analysis_guidelines.md` to load the rules into context.
-    -   Read `features (1).xlsx` and `archetypes.xlsx` if you need to refresh valid inputs.
+    -   Read `features.xlsx` and `archetypes.xlsx` if you need to refresh valid inputs.
 
 2.  **Scaffold Report**
     -   Check if `Report.md` exists in the property folder.
