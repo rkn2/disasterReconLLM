@@ -44,3 +44,14 @@ Be descriptive! Do not use single words for these fields:
 - **Objective Terms**: Unless you have confirmed the building's orientation via a map or file metadata (e.g., `north_wall.jpg`), do NOT use cardinal directions (North, South, East, West).
 - **Relative Terms**: Use `Front` (facing street), `Rear`, `Left Side`, `Right Side`.
 - **Estimation**: If you strongly suspect orientation based on shadows or sun, mark it with `(est)` and HIGH Uncertainty.
+
+## 8. Human vs. Agent Roles
+- **Agent (The Draftsman)**:
+    - **Drafting**: Fill out the visual basics (Materials, Roof Shapes, Collapse Mechanisms) to 80% completion.
+    - **Timeline**: Build the existence timeline from available `photos/timeline/` images.
+    - **Flagging**: Mark every uncertain observation (Uncertainty column).
+- **Student (The Auditor)**:
+    - **Verification**: You MUST check every "High Uncertainty" tag.
+    - **GPS**: You are responsible for finding and entering the exact `Latitude` and `Longitude`.
+    - **Research**: Use the Toolkit links to find the exact "Construction Year" or confirm "Historic" status.
+    - **Logic Check**: Ensure the values make sense (e.g., did the Agent say "Flood Depth: 4ft" when the water line is clearly at the roof?).

@@ -20,7 +20,7 @@ pip install pandas openpyxl
 ## Repository Structure
 
 -   `generate_reports.py`: The scaffolding script.
--   `features (1).xlsx`: Schema definition for report attributes.
+-   `features.xlsx`: Schema definition for report attributes.
 -   `archetypes.xlsx`: Building classification reference.
 -   `analysis_guidelines.md`: Instructions for the AI Agent.
 -   `.agent/workflows/process_property.md`: The codified workflow for the Agent.
@@ -28,7 +28,7 @@ pip install pandas openpyxl
 
 ## Features & Schema
 
-The core logic of the reports is defined in **[features (1).xlsx](features%20(1).xlsx)**. This file acts as the configuration for both the script and the AI Agent.
+The core logic of the reports is defined in **[features.xlsx](features.xlsx)**. This file acts as the configuration for both the script and the AI Agent.
 
 -   **Attribute Name**: The actual field being analyzed (e.g., "Archetype Number", "No. of Stories").
 -   **Input Choices / Options**: Constrains the AI to valid outputs (e.g., "1, 2, 3+" or "Brick, CMU, Wood").

@@ -13,7 +13,7 @@ def generate_reports():
     base_path = '/Users/rebeccanapolitano/antigravityProjects/disasterRecon'
     disaster_path = os.path.join(base_path, args.disaster)
     individual_path = os.path.join(disaster_path, 'individual')
-    features_path = os.path.join(base_path, 'features (1).xlsx')
+    features_path = os.path.join(base_path, 'features.xlsx')
     
     # Load Excel Data
     try:
