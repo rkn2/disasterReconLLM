@@ -27,6 +27,9 @@ For each disaster event you analyze, create a root folder named after the event 
     -   *Goal*: Clear view of facade, roof shape, and window layout.
 -   **After Images**: Post-disaster photos showing the damage.
     -   *Goal*: Show debris, collapse mechanism, and remaining structural elements.
+-   **Timeline Images (`photos/timeline/`)**: Any other photos from years before or after the event.
+    -   *Goal*: Track the existence of the building over time.
+    -   *Naming*: **CRITICAL**: Start filename with the Year (e.g., `2018_satellite.jpg`, `2021-03_drone.png`).
 
 #### Documents (`files/`)
 -   **Property Cards**: PDF exports from county assessor sites.

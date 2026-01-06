@@ -8,9 +8,12 @@
 - **Description**: Provide a **detailed verbal description** of the building in the `Archetype Description` field. Do not use the choices if they are just generic categories; write a sentence (e.g., "Historic 2-story brick commercial building with flat roof and decorative cornice").
 
 ## 2. Timeline & Existence
-- **Pre-Event**: If the building is visible in "Before" photos, mark Pre-Event years as **Yes**.
-- **Post-Event**: Unless you have specific multi-year aerial imagery confirming the building was/is present in years +1 to +5, mark these as **Unknown**.
-    - *Exception*: If you have definitive proof it was demolished and verified as empty for years, you might say "No", but "Unknown" is safer if you only have a snapshot.
+- **Check `Timeline Evidence`**: Look for headers like `2018_satellite.jpg` or `2021_drone.png` in the report.
+- **Interpolation Rules**:
+    - If you see a photo from 2018 showing the building, mark `Existence (Year -4)` (assuming 2022 event) as **Yes**.
+    - If you see it exists in 2018 and 2020, assume it exists in 2019.
+    - If "After" photos or a 2022 timeline photo show it destroyed/demolished, mark subsequent years as **No**.
+- **No Evidence**: If you have NO photos for a specific post-event year (e.g., Year +3), mark it as **Unknown**. Do NOT guess.
 
 ## 3. High Verbosity Areas
 Be descriptive! Do not use single words for these fields:

@@ -34,6 +34,7 @@ def generate_reports():
         # Find images
         before_images = glob.glob(os.path.join(prop_dir, 'photos', 'before', '*'))
         after_images = glob.glob(os.path.join(prop_dir, 'photos', 'after', '*'))
+        timeline_images = sorted(glob.glob(os.path.join(prop_dir, 'photos', 'timeline', '*')))
         pdfs = glob.glob(os.path.join(prop_dir, 'files', '*.pdf'))
         
         with open(report_path, 'w') as f:
@@ -55,6 +56,15 @@ def generate_reports():
                     f.write(f"![After Image]({rel_path})\n\n")
             else:
                 f.write("_No after images found._\n\n")
+
+            f.write("### Timeline Evidence\n")
+            if timeline_images:
+                for img in timeline_images:
+                    rel_path = os.path.relpath(img, prop_dir)
+                    name = os.path.basename(img)
+                    f.write(f"![{name}]({rel_path})\n\n")
+            else:
+                f.write("_No timeline images found._\n\n")
             
             f.write("## Documents\n")
             if pdfs:
