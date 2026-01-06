@@ -48,6 +48,10 @@ Be descriptive! Do not use single words for these fields:
 ## 7. Orientation & Facades
 - **Objective Terms**: Unless you have confirmed the building's orientation via a map or file metadata (e.g., `north_wall.jpg`), do NOT use cardinal directions (North, South, East, West).
 - **Relative Terms**: Use `Front` (facing street), `Rear`, `Left Side`, `Right Side`.
+- **Wall Damage Analysis**:
+    -   For `Wall Damage % (Front)`, ONLY check images starting with `front_`.
+    -   For `Wall Damage % (Rear)`, ONLY check images starting with `rear_`.
+    -   If no image exists for that side (e.g., no `rear_` photos), enter `[NEEDS_RESEARCH]` and mark Uncertainty as `High`.
 - **Estimation**: If you strongly suspect orientation based on shadows or sun, mark it with `(est)` and HIGH Uncertainty.
 
 ## 8. Human vs. Agent Roles
