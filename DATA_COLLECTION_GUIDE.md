@@ -60,12 +60,19 @@ This folder is for context that applies to the entire dataset or town, not just 
 -   **YouTube**: Look for drone flyovers of the disaster zone. Pause and screenshot your specific property if visible.
 -   **NOAA / NWS Imagery**: The National Weather Service often releases high-resolution aerial comparison maps after major events.
 
-### D. Research Toolkit (Links)
+### E. Location Data
+-   **GPS Coordinates**: We now track exact location.
+    -   *How to finds*: Right-click the building on Google Maps and click the numbers at the top (e.g., `36.741, -88.632`).
+    -   *Where to put it*: You will enter this in the final Report table, or save it in a text file in the `files/` folder for reference.
+
 -   **[National Register Database (NPS)](https://npgallery.nps.gov/nrhp)**: Search for historic nominations and technical descriptions.
 -   **[USGS EarthExplorer](https://earthexplorer.usgs.gov/)**: Download historic satellite imagery (Landsat/Sentinel).
 -   **[Google Earth Pro](https://www.google.com/earth/versions/)**: Desktop version required for the "Historical Imagery" timeline slider.
 -   **[NOAA Damage Assessment Toolkit](https://apps.dat.noaa.gov/stormdamage/)**: Official NWS damage paths and EF-ratings.
 
 1.  **Visual Verification**: Don't rely on just one source. If the assessor says "Brick" but the photo shows "Vinyl Siding," trust the photo (it might be a brick veneer or a renovation).
-2.  **File Naming**: Keep filenames descriptive but simple (e.g., `front_facade_before.png`, `roof_collapse_after.jpg`).
+2.  **File Naming (Orientation)**: Do **NOT** guess "North" or "South" unless you are looking at a map.
+    -   *Bad*: `north_wall_damage.jpg` (unless verified).
+    -   *Good*: `front_facade_damage.jpg`, `rear_elevation.jpg`, `left_side_from_street.jpg`.
+
 3.  **PDFs**: Only put relevant PDFs in the `files/` folder.
