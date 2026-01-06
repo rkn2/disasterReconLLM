@@ -58,6 +58,7 @@ This folder is for context that applies to the entire dataset or town, not just 
 -   **Social Media**: Twitter (X), Facebook, and TikTok are valuable for real-time disaster footage.
     -   *Search Terms*: "[City Name] tornado", "[Street Name] damage", "aerial footage [City]".
 -   **YouTube**: Look for drone flyovers of the disaster zone. Pause and screenshot your specific property if visible.
+    -   *Recommended Channels*: **iCyclone** (Josh Morgerman), **WXChasing** (Brandon Clement), **Reed Timmer**, **Live Storms Media**. These channels often have high-res ground-level and drone footage immediately post-disaster.
 -   **NOAA / NWS Imagery**: The National Weather Service often releases high-resolution aerial comparison maps after major events.
 
 ### E. Location Data
