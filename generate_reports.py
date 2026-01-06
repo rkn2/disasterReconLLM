@@ -77,8 +77,8 @@ def generate_reports():
             f.write("## Feature Analysis\n")
             f.write("> **Note:** If observed value is not in 'Input Choices', please note 'Add [Value] to choices'.\n\n")
             
-            f.write("| Attribute Name | Observation (Before) | Observation (After) | Uncertainty | Input Choices | Identification Guide |\n")
-            f.write("| :--- | :--- | :--- | :--- | :--- | :--- |\n")
+            f.write("| Attribute Name | Observation (Before) | Observation (After) | Source | Uncertainty | Input Choices | Identification Guide |\n")
+            f.write("| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n")
             
             # Populate table rows
             for index, row in df_features.iterrows():
@@ -103,10 +103,10 @@ def generate_reports():
                          if i == 0: year_label = "Existence (Event Year)"
                          else: year_label = f"Existence (Year {year_offset})"
                          
-                         f.write(f"| {year_label} | | | {uncertainty} | Yes / No | {guide} |\n")
+                         f.write(f"| {year_label} | | | | {uncertainty} | Yes / No | {guide} |\n")
                 else:
                     if pd.notna(attr_name):
-                        f.write(f"| {attr_name} | | | {uncertainty} | {choices} | {guide} |\n")
+                        f.write(f"| {attr_name} | | | | {uncertainty} | {choices} | {guide} |\n")
 
         print(f"Generated report for {prop} at {report_path}")
 
