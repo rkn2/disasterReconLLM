@@ -1,91 +1,84 @@
 # Disaster Reconnaissance Report Generator
 
-This repository contains the tools and workflows for automating the generation of technical reconnaissance reports from post-disaster data collected by students.
+**Automated technical reporting for post-disaster structural assessments.**
 
-## Overview
+This system combines student-collected field data with AI Agent analysis to generate consistent, high-quality reconnaissance reports.
 
-The system works in two stages:
-1.  **Scaffolding (Script)**: A Python script scans the student-organized folders and creates blank `Report.md` files with the correct table structure.
-2.  **Analysis (Agent)**: An AI Agent (Gemini/Antigravity) processes the images and fills in the technical observations (archetype, failure mechanism, etc.).
+## 🚀 Quick Links
+*   **For Students**: 📸 **[Data Collection Guide](DATA_COLLECTION_GUIDE.md)** - *Start here!*
+*   **For Reviewers**: 🤖 **[Analysis Guidelines](analysis_guidelines.md)** - *How to audit the AI.*
+*   **Result Example**: 📄 **[Sample Report](mayfield/individual/address1/Report.md)**
 
-## Prerequisites
+---
 
--   Python 3.12 or higher.
--   Required libraries: `pandas`, `openpyxl`.
+## 🔄 Workflow Overview
 
-```bash
-pip install pandas openpyxl
+```mermaid
+graph LR
+    A[Student] -->|Collects Photos & Data| B(Folder Structure)
+    B -->|Scanned by Script| C(Blank Reports)
+    C -->|Analyzed by Agent| D[Final Report.md]
+    D -->|Audited by| A
 ```
 
-## Repository Structure
+1.  **Student**: Collects data and organizes it into a standard folder structure.
+2.  **Script**: `generate_reports.py` creates the schema-compliant Markdown tables.
+3.  **Agent**: AI analyzes images to fill in technical details (Damage, Archetype).
+4.  **Student**: Verifies the AI's work and adds precise GPS/Research data.
 
--   `generate_reports.py`: The scaffolding script.
--   `features.xlsx`: Schema definition for report attributes.
--   `archetypes.xlsx`: Building classification reference.
--   `analysis_guidelines.md`: Instructions for the AI Agent.
--   `.agent/workflows/process_property.md`: The codified workflow for the Agent.
--   `DATA_COLLECTION_GUIDE.md`: Instructions for students (data collection only).
+---
 
-## Features & Schema
+## 👩‍🎓 For Students
 
-The core logic of the reports is defined in **[features.xlsx](features.xlsx)**. This file acts as the configuration for both the script and the AI Agent.
+**Your primary job is Data Collection & Verification.**
 
--   **Attribute Name**: The actual field being analyzed (e.g., "Archetype Number", "No. of Stories").
--   **Input Choices / Options**: Constrains the AI to valid outputs (e.g., "1, 2, 3+" or "Brick, CMU, Wood").
--   **Reasoning / Identification Guide**: This column provides the prompt logic or "thinking instructions" for the AI Agent.
+1.  **Read the Rules**: Go to the **[Data Collection Guide](DATA_COLLECTION_GUIDE.md)**.
+    *   *Critical*: Naming conventions (e.g., `front_facade.jpg`) and GPS coordinates are mandatory.
+2.  **Organize Your Folders**: Ensure your disaster folder matches the required structure (see Guide).
+3.  **Audit the Result**: Once the report is generated, you will use the **[Analysis Guidelines](analysis_guidelines.md)** to check the `Report.md` for accuracy.
 
-*To change what the agent looks for, edit this Excel file.*
+---
 
-## Usage Guide (Instructor Only)
+## 👨‍🏫 For Instructors (Running the System)
+
+### Prerequisites
+*   Python 3.12+
+*   `pip install pandas openpyxl`
 
 ### Step 1: Prepare the Data
-Ensure student data is organized correctly. Here is an example using the included `mayfield` dataset:
-
+Ensure students have submitted their folders according to the [Data Collection Guide](DATA_COLLECTION_GUIDE.md).
+*Structure Preview:*
 ```text
-mayfield/
-├── supplementary/
-│   ├── Mayfield SUA Appendix C - Historic Survey-compressed.pdf
-│   └── 1984.pdf
-└── individual/
-    └── address1/
-        ├── photos/
-        │   ├── before/
-        │   │   └── front before.png
-        │   ├── after/
-        │   │   ├── front after.png
-        │   │   └── damaged.png
-        │   └── timeline/
-        │       ├── 2018_satellite.jpg
-        │       └── 2020_streetview.png
-        └── files/
+[Disaster_Name]/
+├── individual/
+│   └── [Property_Address]/
+│       ├── photos/
+│       │   ├── timeline/ (YYYY_filename.jpg)
+│       │   ├── before/
+│       │   └── after/
+│       └── files/
 ```
 
 ### Step 2: Run Scaffolding
-Run the python script to generate the blank Markdown reports for all properties in the disaster folder.
-
+Run the script to generate blank reports for every property.
 ```bash
-# Example for a folder named "Mayfield_Tornado"
-python3 generate_reports.py --disaster Mayfield_Tornado
+python3 generate_reports.py --disaster [Disaster_Folder_Name]
 ```
 
-This will create a `Report.md` in every property folder.
-
 ### Step 3: Run Agent Analysis
-Use your Agent interface to analyze the properties.
+Ask the AI Agent (Antigravity):
+> "Run the Batch Processing workflow on `[Disaster_Folder_Name]`."
 
-**Option A: Single Property**
-> "Run the Property Analysis workflow on `[Disaster_Name]/individual/[Property_Address]`."
+---
 
-**Option B: Batch Processing (All Properties)**
-> "Run the Batch Processing workflow on `[Disaster_Name]`."
+## 🧠 System Logic & Schema
 
-The agent will:
-1.  Loop through all folders.
-2.  Check if `Report.md` is empty/new.
-3.  If empty, it will analyze the photos and fill it.
+*   **Schema**: **[features.xlsx](features.xlsx)** defines every row in the report (Attribute Name, Options, Prompt Logic).
+    *   *Note*: Includes unified logic for both Tornado and Flood hazards.
+*   **Archetypes**: **[archetypes.xlsx](archetypes.xlsx)** defines the valid building types (T1-T12).
 
-## Example Output
-
-You can see a complete example of the folder structure and a finalized report in the `mayfield` folder included in this repo.
-
--   **[mayfield/individual/address1/Report.md](mayfield/individual/address1/Report.md)**: This is an example of a report that has been scaffolded by the script and then populated by the Agent with visual observations.
+### Folder Structure
+*   `generate_reports.py`: The automation script.
+*   `DATA_COLLECTION_GUIDE.md`: Instructions for students.
+*   `analysis_guidelines.md`: Rules for the AI and verifying students.
+*   `.agent/workflows/`: Automated agent instructions.
