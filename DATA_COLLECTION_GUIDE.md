@@ -75,12 +75,11 @@ This folder is for context that applies to the entire dataset or town, not just 
 -   **[ArcGIS Damage Assessments](https://www.arcgis.com/home/user.html?user=v-lmarotti_mssmt)**: (Example Source) Useful user-generated maps and data.
 
 1.  **Visual Verification**: Don't rely on just one source. If the assessor says "Brick" but the photo shows "Vinyl Siding," trust the photo (it might be a brick veneer or a renovation).
-278.  **File Naming (Orientation - STRICT)**: You MUST use these prefixes so the Agent knows which wall is which.
-    -   `front_...`
-    -   `rear_...`
-    -   `left_...`
-    -   `right_...`
-    -   *Example*: `front_facade.jpg`, `right_side_wall_collapse.png`
+78.  **File Naming (Orientation - STRICT)**: You MUST use Cardinal Directions.
+    -   **Definition**: "North" = The wall that predominantly faces North (`0°` or `360°`).
+    -   **Rule**: Use `north_`, `south_`, `east_`, `west_` prefixes.
+    -   *Example*: `north_facade.jpg`, `south_wall_collapse.png`
+
 
 3.  **PDFs**: Only put relevant PDFs in the `files/` folder.
 

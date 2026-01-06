@@ -74,8 +74,8 @@ _No PDF documents found._
 | Foundation Condition | [NEEDS_RESEARCH] | High | N/A | Obscured by debris | | Scour, Slab Crack, Shifted, Intact | Check for exposed footings (scour), cracks in slab, or movement. |
 | Roof Damage % | >75% | Moderate | Visual | Stylistic estimate | | 0%, <25%, 25-50%, 50-75%, >75% | Estimate percentage of roof covering missing or structure failed. |
 | Flood Depth (Visible) | N/A | Low | Visual | Not a flood event | | Numeric (feet/cm) | Measure height of mudline relative to windows/doors if visible. |
-| Wall Damage % (Front) | >75% | Moderate | Visual | front_after.png shows total collapse | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "front" images. Estimate % wall failure. If obscured/missing, use [NEEDS_RESEARCH]. |
-| Wall Damage % (Rear) | [NEEDS_RESEARCH] | High | N/A | No rear_ photos | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "rear" images. Estimate % wall failure. If obscured/missing, use [NEEDS_RESEARCH]. |
-| Wall Damage % (Left) | 25-50% | Moderate | Visual | Partial collapse | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "left" images. Estimate % wall failure. If obscured/missing, use [NEEDS_RESEARCH]. |
-| Wall Damage % (Right) | 0% | Low | Visual | Intact in aerial | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "right" images. Estimate % wall failure. If obscured/missing, use [NEEDS_RESEARCH]. |
+| Wall Damage % (North) | >75% | Moderate | Visual | front_after.png shows total collapse | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "north" images. Estimate % wall failure. If no `north_` image, use [NEEDS_RESEARCH]. |
+| Wall Damage % (South) | [NEEDS_RESEARCH] | High | N/A | No south_ photos | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "south" images. Estimate % wall failure. If no `south_` image, use [NEEDS_RESEARCH]. |
+| Wall Damage % (East) | 25-50% | Moderate | Visual | Partial collapse | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "east" images. Estimate % wall failure. If no `east_` image, use [NEEDS_RESEARCH]. |
+| Wall Damage % (West) | 0% | Low | Visual | Intact in aerial | | 0%, <25%, 25-50%, 50-75%, >75% | Analyze "west" images. Estimate % wall failure. If no `west_` image, use [NEEDS_RESEARCH]. |
 | Flood Duration (Hours) | N/A | High | N/A | Tornado event | | Numeric | Check specific reports or interviews. Very hard to tell visually. Likely [NEEDS_RESEARCH]. |
