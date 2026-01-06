@@ -90,6 +90,8 @@ def generate_reports():
             
             f.write("| Attribute Name | Observation (Before) | Observation (After) | Source | Uncertainty | Notes | Input Choices | Identification Guide |\n")
             f.write("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n")
+            f.write(f"| Date Analyzed | | | | | {datetime.datetime.now().strftime('%Y-%m-%d')} | Date | YYYY-MM-DD |\n")
+            f.write("| Observer Name | | | | | | Text | Name of the person analyzing the data |\n")
             f.write("| Latitude | | | | | | Numeric | GPS Latitude (e.g., 36.741) |\n")
             f.write("| Longitude | | | | | | Numeric | GPS Longitude (e.g., -88.632) |\n")
 
