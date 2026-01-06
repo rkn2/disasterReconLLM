@@ -33,7 +33,7 @@ graph LR
 **Your primary job is Data Collection & Verification.**
 
 1.  **Read the Rules**: Go to the **[Data Collection Guide](DATA_COLLECTION_GUIDE.md)**.
-    *   *Critical*: Naming conventions (e.g., `front_facade.jpg`) and GPS coordinates are mandatory.
+    *   *Critical*: Naming conventions (e.g., `north_facade.jpg`) and GPS coordinates are mandatory.
 2.  **Organize Your Folders**: Ensure your disaster folder matches the required structure (see Guide).
 3.  **Audit the Result**: Once the report is generated, you will use the **[Analysis Guidelines](analysis_guidelines.md)** to check the `Report.md` for accuracy.
 
